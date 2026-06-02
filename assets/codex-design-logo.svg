@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" role="img" aria-label="Codex Design logo">
+  <rect width="960" height="320" rx="48" fill="#141414"/>
+  <g transform="translate(64 72)">
+    <rect width="176" height="176" rx="38" fill="#F7F2EA" opacity="0.96"/>
+    <rect x="34" y="38" width="108" height="28" rx="6" fill="#141414"/>
+    <rect x="34" y="82" width="48" height="42" rx="8" fill="#141414" opacity="0.74"/>
+    <rect x="94" y="82" width="48" height="42" rx="8" fill="#141414" opacity="0.44"/>
+    <path d="M36 144h104" stroke="#141414" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="288" y="143" fill="#F7F2EA" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="58" font-weight="720">Codex Design</text>
+  <text x="292" y="204" fill="#F7F2EA" opacity="0.64" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" font-weight="450">Product UI/UX superpowers</text>
+</svg>

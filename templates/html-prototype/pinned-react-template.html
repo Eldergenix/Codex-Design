@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Codex Design Prototype</title>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --surface-0: light-dark(oklch(0.985 0.004 264), oklch(0.145 0.004 264));
+      --surface-1: light-dark(oklch(1 0 0), oklch(0.18 0.004 264));
+      --surface-2: light-dark(oklch(0.965 0.006 264), oklch(0.225 0.006 264));
+      --border: light-dark(oklch(0.88 0.006 264), oklch(0.32 0.008 264));
+      --text: light-dark(oklch(0.18 0.01 264), oklch(0.94 0.006 264));
+      --muted: light-dark(oklch(0.47 0.01 264), oklch(0.68 0.008 264));
+      --radius: 18px;
+      --space: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--surface-0);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      text-wrap: pretty;
+    }
+    #root { min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const prototypeStyles = {
+      shell: {
+        minHeight: '100vh',
+        display: 'grid',
+        placeItems: 'center',
+        padding: 'clamp(20px, 4vw, 56px)',
+      },
+      panel: {
+        width: 'min(1040px, 100%)',
+        border: '1px solid var(--border)',
+        borderRadius: 'var(--radius)',
+        background: 'var(--surface-1)',
+        padding: 'clamp(24px, 4vw, 48px)',
+      },
+    };
+
+    function App() {
+      return (
+        <main style={prototypeStyles.shell} data-screen-label="01 Prototype">
+          <section style={prototypeStyles.panel}>
+            <p style={{ color: 'var(--muted)', margin: 0 }}>Replace with the prototype.</p>
+          </section>
+        </main>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

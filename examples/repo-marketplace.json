@@ -1,0 +1,20 @@
+{
+  "name": "local-repo-design-plugins",
+  "interface": {
+    "displayName": "Local Repo Design Plugins"
+  },
+  "plugins": [
+    {
+      "name": "codex-design-superpowers",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-design-superpowers"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}

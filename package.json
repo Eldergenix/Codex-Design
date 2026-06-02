@@ -1,0 +1,12 @@
+{
+  "name": "codex-design-superpowers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Codex plugin for product design, UI/UX, web, mobile, and design systems.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-plugin.mjs",
+    "tree": "node scripts/print-tree.mjs"
+  },
+  "devDependencies": {}
+}

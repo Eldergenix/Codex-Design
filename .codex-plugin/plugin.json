@@ -1,0 +1,51 @@
+{
+  "name": "codex-design-superpowers",
+  "version": "1.0.0",
+  "description": "Product, web, mobile, desktop, brand, and UI/UX design workflows for Codex using GPT-5.5 outcome-first prompting, design research, design systems, implementation, and review gates.",
+  "author": {
+    "name": "Codex Design Superpowers"
+  },
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "ui",
+    "ux",
+    "product-design",
+    "frontend",
+    "mobile",
+    "nextjs",
+    "expo",
+    "react-native",
+    "tailwind",
+    "shadcn",
+    "design-system",
+    "branding",
+    "prototyping",
+    "gpt-5.5",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Design",
+    "shortDescription": "High-end UI/UX, product design, web, mobile, and design-system workflows for Codex",
+    "longDescription": "Use Codex Design to research visual direction, define product UX, build high-fidelity web and mobile interfaces, enforce consistent design systems, implement reusable components, and review visual quality before delivery.",
+    "developerName": "Codex Design Superpowers",
+    "category": "Design",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Codex Design to create a high-end product UI for this feature.",
+      "Use Codex Design to audit this app for UI/UX consistency and implement the fixes.",
+      "Use Codex Design to turn this product idea into web and mobile design artifacts."
+    ],
+    "brandColor": "#141414",
+    "composerIcon": "./assets/codex-design-icon.svg",
+    "logo": "./assets/codex-design-logo.png",
+    "screenshots": [
+      "./assets/codex-design-screenshot.png"
+    ]
+  }
+}

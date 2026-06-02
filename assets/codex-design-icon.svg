@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Codex Design icon">
+  <rect width="128" height="128" rx="28" fill="#141414"/>
+  <path d="M32 38h64v18H32z" fill="#F7F2EA" opacity="0.94"/>
+  <path d="M32 66h29v24H32z" fill="#F7F2EA" opacity="0.72"/>
+  <path d="M70 66h26v24H70z" fill="#F7F2EA" opacity="0.42"/>
+  <path d="M32 99h64" stroke="#F7F2EA" stroke-width="6" stroke-linecap="round" opacity="0.94"/>
+</svg>

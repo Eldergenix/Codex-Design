@@ -1,0 +1,20 @@
+{
+  "name": "personal-design-plugins",
+  "interface": {
+    "displayName": "Personal Design Plugins"
+  },
+  "plugins": [
+    {
+      "name": "codex-design-superpowers",
+      "source": {
+        "source": "local",
+        "path": "./.codex/plugins/codex-design-superpowers"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}
