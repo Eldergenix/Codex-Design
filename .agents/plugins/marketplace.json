@@ -1,0 +1,23 @@
+{
+  "name": "codex-design",
+  "interface": {
+    "displayName": "Codex Design"
+  },
+  "plugins": [
+    {
+      "name": "codex-design-superpowers",
+      "displayName": "Codex Design",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design",
+      "description": "High-end UI/UX, product design, web, mobile, and design-system workflows for Codex.",
+      "icon": "./assets/codex-design-icon.svg"
+    }
+  ]
+}

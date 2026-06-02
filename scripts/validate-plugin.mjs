@@ -29,6 +29,9 @@ function walk(dir, files = []) {
 const manifestPath = path.join(root, '.codex-plugin', 'plugin.json');
 if (!fs.existsSync(manifestPath)) fail('Missing .codex-plugin/plugin.json');
 const manifest = readJson(manifestPath);
+const marketplacePath = path.join(root, '.agents', 'plugins', 'marketplace.json');
+if (!fs.existsSync(marketplacePath)) fail('Missing .agents/plugins/marketplace.json');
+const marketplace = readJson(marketplacePath);
 
 if (manifest) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(manifest.name || '')) fail('Manifest name must be kebab-case');
@@ -44,6 +47,15 @@ if (manifest) {
     if (!fs.existsSync(assetPath)) fail(`Manifest asset path does not exist: ${rel}`);
   }
   ok('Manifest parsed and asset paths checked');
+}
+
+if (marketplace) {
+  const plugin = marketplace.plugins?.find((entry) => entry.name === manifest?.name);
+  if (!plugin) fail(`Marketplace must include plugin entry for ${manifest?.name || 'manifest name'}`);
+  if (plugin?.source?.source !== 'local') fail('Marketplace plugin source must be local');
+  if (plugin?.source?.path !== './') fail('Marketplace plugin source path must be ./');
+  if (plugin?.icon && !fs.existsSync(path.join(root, plugin.icon))) fail(`Marketplace icon path does not exist: ${plugin.icon}`);
+  ok('Marketplace manifest parsed and plugin source checked');
 }
 
 const skillsDir = path.join(root, 'skills');

@@ -8,6 +8,7 @@ The package is intentionally instruction-first. It gives Codex a reusable design
 
 ```text
 codex-design-superpowers/
+├── .agents/plugins/marketplace.json
 ├── .codex-plugin/plugin.json
 ├── skills/
 │   ├── codex-design-core/
@@ -30,6 +31,16 @@ codex-design-superpowers/
 ```
 
 ## Installation for local testing
+
+### GitHub marketplace
+
+Add this repository as a marketplace source:
+
+```text
+https://github.com/Eldergenix/Codex-Design
+```
+
+The root `.agents/plugins/marketplace.json` points to this package with a local `./` source, so the marketplace installer can discover the plugin from the repository root.
 
 ### Repo-local marketplace
 
